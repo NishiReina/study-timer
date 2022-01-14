@@ -28,7 +28,7 @@
         </div>
         <div class="create__ttl-time">
             <p class="create__ttl-time-text">今日の学習時間:</p>
-            <input name="time" type="text" value="{{$date}}" class="create__ttl-time--bold" readonly>
+            <input name="time" type="text" value="{{$data}}" class="create__ttl-time--bold" readonly>
         </div>
     </div>
     <div class="create__textarea">

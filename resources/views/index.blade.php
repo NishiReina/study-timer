@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link href="{{ secure_asset('/css/reset.css') }}" rel="stylesheet">
+    <!-- <link href="{{ secure_asset('/css/reset.css') }}" rel="stylesheet">
     <link href="{{ secure_asset('/css/common.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('/css/index.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/css/index.css') }}" rel="stylesheet"> -->
+    <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/common.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/index.css') }}" rel="stylesheet">
     
 </head>
 <body>
@@ -32,7 +35,7 @@
                         <form class="time-list__form" action="/" method="post">
                         @csrf
                             <!-- <p id="time">00:00:00</p> -->
-                            <input type="text" id="time" name="date" value="{{$date}}" readonly> 
+                            <input type="text" id="time" name="date" value="{{$data}}" readonly> 
                         </div>
                         <div class="time-list__card-btn">
                             <div class="btn">

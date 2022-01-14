@@ -26,6 +26,7 @@
                     <p>日付</p>
                     <p>タイトル</p>
                 </div>
+                <div class="show__diary-table-item">
                 <table>
                     @foreach($diaries as $diary)
                     <tr>
@@ -34,6 +35,7 @@
                     </tr>
                     @endforeach
                 </table>
+                </div>
             </div>
         </div>
         <div class="show__diary-item">

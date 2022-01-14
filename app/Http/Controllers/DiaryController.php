@@ -22,7 +22,7 @@ class DiaryController extends Controller
     //
     public function index(Request $request, SumTime $sumTime, CompareTime $compareTime, BestDay $bestDay, BestMonth $bestMonth, ChangeSec $changeSec, ChangeString $changeString){
 
-        $date = $request->session()->get('date');
+        $data = $request->session()->get('date');
         $now = Carbon::now();
         $month = $now->format('Y-m');
 
@@ -67,9 +67,9 @@ class DiaryController extends Controller
         //  最も勉強した月
         $bestM = $bestMonth($sumTime, $changeSec, $changeString);
         //一時的にdataで置いてるけど、いずれdateに統一して欲しい
-        $data = $date;
+        // $data = $date;
         // index.bladeに渡す情報
-        return view('index', compact('date','month', 'sumMonthTime', 'sumWeekTime', 'compareMonth', 'compareWeek', 'bestD', 'bestM'));
+        return view('index', compact('data','month', 'sumMonthTime', 'sumWeekTime', 'compareMonth', 'compareWeek', 'bestD', 'bestM'));
 
     }
 
@@ -81,8 +81,8 @@ class DiaryController extends Controller
     }
 
     public function add(Request $request){
-        $date = $request->session()->get('date');
-        return view('create', ['date' => $date]);
+        $data = $request->session()->get('date');
+        return view('create', ['data' => $data]);
     }
 
     public function create(DiaryRequest $request){

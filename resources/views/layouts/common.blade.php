@@ -12,7 +12,7 @@
             <p ><a class="header-wrap__ttl" href="/">Study Timer</a></p>
             <div class="header-wrap__time">
                 <span>今日の学習時間: </span>
-                <span id="todayTime"><span>{{$date}}</span></span>
+                <span id="todayTime"><span>{{$data}}</span></span>
 
             </div>
         </nav>

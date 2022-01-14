@@ -29,8 +29,9 @@ final class BestMonth
         // ]);
         array_push($monthList, $firstMonth);
         //MEMO:whileで1を指定するならdo~whileのほうがいい気がする
+        if ($firstMonth == null) return ;
         while(($firstMonth->month != $now->month) || ($firstMonth->year != $now->year)){
-            if ($firstMonth == null) return ;
+            // if ($firstMonth == null) return ;
             // if (($ls->month == $now->month) && ($ls->year == $now->year)){//MEMO:whileの条件式部分はこのまま&&で繋いで条件にしたらダメなの？
             //     break;
             // }

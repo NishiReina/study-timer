@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>show</title>
-    <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/css/reset.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/css/common.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/css/show.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/common.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/show.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/show.css') }}" rel="stylesheet"> -->
 </head>
 <body>
 @extends('layouts.common')

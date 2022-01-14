@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
-    <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/css/reset.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/css/common.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('/css/list.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('/css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/common.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/list.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/list.css') }}" rel="stylesheet"> -->
 </head>
 <style>
     svg.w-5.h-5 {  /*paginateメソッドの矢印の大きさ調整のために追加*/
